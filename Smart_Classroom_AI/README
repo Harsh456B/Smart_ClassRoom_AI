@@ -5,8 +5,6 @@ The system automatically analyzes classroom activities using a live camera feed 
 
 This project focuses on **practical, real-world classroom automation**, not just theory.
 
----
-
 ## 🚀 Project Overview
 
 Smart Classroom AI assists teachers and institutions by:
@@ -19,8 +17,6 @@ Smart Classroom AI assists teachers and institutions by:
 
 The system works completely in **real time** using a webcam or CCTV feed.
 
----
-
 ## 🎯 Objectives
 
 - Reduce manual attendance effort
@@ -28,8 +24,6 @@ The system works completely in **real time** using a webcam or CCTV feed.
 - Detect unsafe or abnormal behavior early
 - Provide real-time decision support to teachers
 - Build an industry-level AI system using computer vision
-
----
 
 ## 🧠 Features Implemented
 
@@ -78,105 +72,150 @@ The system works completely in **real time** using a webcam or CCTV feed.
 - Phone usage status
 - Live classroom analytics
 
----
+## 🌐 Enhanced Web Interface
+
+We've added a beautiful, interactive web interface that connects to your AI system:
+
+- **Real-time Camera Feed** - Live webcam footage in the browser
+- **System Controls** - Start/Stop your AI system from the web interface
+- **Live Dashboard** - Real-time analytics from your AI system
+- **3D Animations** - Beautiful UI with modern design
+- **Responsive Design** - Works on all devices
 
 ## 🗂️ Project Folder Structure
 
-```text
+```
 Smart_Classroom_AI/
 │
 ├── attendance/
-│ ├── mark_attendance.py
-│ └── attendance_logic.py
+│   ├── mark_attendance.py
+│   └── attendance_logic.py
 │
 ├── analytics/
-│ └── emotion_analytics.py
+│   └── emotion_analytics.py
 │
 ├── alerts/
-│ └── alert_manager.py
+│   └── alert_manager.py
 │
 ├── attention/
-│ └── attention_detector.py
-│
-├── drowsiness/
-│ └── drowsiness_detector.py
-│
-├── phone/
-│ └── phone_detector.py
-│
-├── violence/
-│ └── violence_detector.py
-│
-├── dashboard/
-│ └── app.py
-│
-├── models/
-│ ├── face_model.yml
-│ ├── emotion_model.h5
-│ ├── labels.pkl
-│ └── yolov5s.pt
-│
-├── runtime/
-│ └── live_data.json
-│
-├── reports/
-│ ├── session_summary.txt
-│ ├── late_entries.txt
-│ └── alerts_log.txt
+│   └── attention_detector.py
 │
 ├── camera.py
+├── config/
+│   └── class_time.py
+├── dashboard/
+│   └── app.py
+├── drowsiness/
+│   └── drowsiness_detector.py
+│
+├── phone/
+│   └── phone_detector.py
+│
+├── violence/
+│   └── violence_detector.py
+│
+├── models/
+│   ├── face_model.yml
+│   ├── emotion_model.h5
+│   ├── labels.pkl
+│   └── yolov5s.pt
+│
+├── reports/
+│   ├── session_summary.txt
+│   ├── late_entries.txt
+│   └── alerts_log.txt
+│
+├── runtime/
+│   ├── live_data.json
+│   └── live_data_temp.json
+│
+├── website/
+│   ├── index.html
+│   ├── css/
+│   │   ├── style.css
+│   │   └── realtime.css
+│   └── js/
+│       ├── script.js
+│       └── simple_realtime.js
 ├── recognize.py
+├── run_all.py
+├── train_emotion.py
+├── train_face.py
 ├── requirements.txt
+├── proper_camera_server.py
+├── integrated_server.py
+├── web_simple.py
+├── run_website.py
+├── start_web_ai.py
+├── web_interface.py
+├── web_requirements.txt
 └── README.md
+```
 
-🛠️ Technologies Used
-Python 3
+## 🛠️ Technologies Used
 
-OpenCV
+- **Python 3** - Core programming language
+- **OpenCV** - Computer vision processing
+- **TensorFlow / Keras** - Deep learning framework
+- **NumPy** - Numerical computing
+- **YOLO** - Object detection system
+- **Streamlit** - Interactive dashboards
+- **Flask** - Web framework for integration
+- **Computer Vision** - Image processing techniques
+- **Deep Learning** - Neural networks for recognition
 
-TensorFlow / Keras
+## ▶️ How to Run the Project
 
-NumPy
-
-YOLO (Object Detection)
-
-Streamlit
-
-Computer Vision
-
-Deep Learning
-
-▶️ How to Run the Project
-1️⃣ Activate Virtual Environment
-Bash
-
+### Method 1: Traditional Approach
+```bash
 # Windows
 venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-2️⃣ Start Smart Classroom AI
-Bash
 
+# Start recognition system
 python recognize.py
-3️⃣ Open Live Dashboard
-Bash
 
+# In another terminal, start dashboard
 streamlit run dashboard/app.py
-📈 Output Generated
-Live webcam window with:
+```
 
-Student name
+### Method 2: Web Interface (Enhanced)
+```bash
+# Install requirements
+pip install flask
 
-Emotion
+# Start the integrated web server
+python proper_camera_server.py
 
-Attention status
+# Access at http://localhost:8080
+```
 
-Drowsiness state
+### Method 3: All-in-One
+```bash
+# Run the integrated system
+python start_web_ai.py
+```
 
-Terminal alerts in real time
+## 📈 Output Generated
 
-Session summary report
+- Live webcam window with:
+  - Student name
+  - Emotion
+  - Attention status
+  - Drowsiness state
+  - Terminal alerts in real time
+  - Session summary report
+  - Alerts log file
+- Live dashboard with classroom analytics
+- Web interface with real-time camera feed and controls
 
-Alerts log file
+## 🤝 Contributing
 
-Live dashboard with classroom analytics
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
