@@ -1,0 +1,101 @@
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+
+# Root directory artifacts
+../*
+!*
+
+# Specific project ignores
+
+# Runtime files
+runtime/live_data.json
+runtime/live_data_temp.json
+
+# Models (if they're large)
+models/face_model.yml
+models/emotion_model.h5
+models/yolov5s.pt
+
+# Reports
+reports/*.txt
+
+# Data
+data/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.directory
+.Trashes
+
+# Log files
+*.log
+
+# Local configuration
+.env
+config/local_settings.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Browser extensions
+extension/
+
+# Temporary files
+tmp/
+temp/
+
+# Node modules (if any)
+node_modules/
+
+# Coverage directory
+.coverage
+htmlcov/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# IPython
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile
+Pipfile.lock
+
+# toml
+pyproject.toml

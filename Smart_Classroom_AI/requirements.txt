@@ -1,0 +1,29 @@
+# Core
+python-dateutil
+numpy<2.0
+
+# Computer Vision
+opencv-python
+opencv-contrib-python
+
+# Deep Learning
+tensorflow
+keras
+
+# Face & Emotion
+scikit-learn
+pickle-mixin
+
+# Object Detection (Phone / Violence)
+ultralytics
+torch
+torchvision
+
+# Dashboard
+streamlit
+
+# Utilities
+imutils
+matplotlib
+pandas
+tqdm
