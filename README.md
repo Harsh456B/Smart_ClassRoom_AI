@@ -72,15 +72,7 @@ The system works completely in **real time** using a webcam or CCTV feed.
 - Phone usage status
 - Live classroom analytics
 
-## 🌐 Enhanced Web Interface
 
-We've added a beautiful, interactive web interface that connects to your AI system:
-
-- **Real-time Camera Feed** - Live webcam footage in the browser
-- **System Controls** - Start/Stop your AI system from the web interface
-- **Live Dashboard** - Real-time analytics from your AI system
-- **3D Animations** - Beautiful UI with modern design
-- **Responsive Design** - Works on all devices
 
 ## 🗂️ Project Folder Structure
 
@@ -128,28 +120,11 @@ Smart_Classroom_AI/
 ├── runtime/
 │   ├── live_data.json
 │   └── live_data_temp.json
-│
-├── website/
-│   ├── index.html
-│   ├── css/
-│   │   ├── style.css
-│   │   └── realtime.css
-│   └── js/
-│       ├── script.js
-│       └── simple_realtime.js
 ├── recognize.py
 ├── run_all.py
 ├── train_emotion.py
 ├── train_face.py
 ├── requirements.txt
-├── proper_camera_server.py
-├── integrated_server.py
-├── web_simple.py
-├── run_website.py
-├── start_web_ai.py
-├── web_interface.py
-├── web_requirements.txt
-└── README.md
 ```
 
 ## 🛠️ Technologies Used
